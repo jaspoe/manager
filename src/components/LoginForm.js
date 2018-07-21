@@ -44,30 +44,32 @@ renderError() {
 
   render() {
     return (
-      <Card>
-        <CardSection>
-          <Input
-            label="name@email.com"
-            onChangeText={this.onEmailChange.bind(this)}
-            value={this.props.email}
-          />
-        </CardSection>
+      <View style={{ marginTop: 75 }}>
+        <Card>
+          <CardSection>
+            <Input
+              label="name@email.com"
+              onChangeText={this.onEmailChange.bind(this)}
+              value={this.props.email}
+            />
+          </CardSection>
 
-        <CardSection>
-          <Input
-            label="password"
-            onChangeText={this.onPasswordChange.bind(this)}
-            value={this.props.password}
-            secureTextEntry
-          />
-        </CardSection>
+          <CardSection>
+            <Input
+              label="password"
+              onChangeText={this.onPasswordChange.bind(this)}
+              value={this.props.password}
+              secureTextEntry
+            />
+          </CardSection>
 
-        {this.renderError()}
+          {this.renderError()}
 
-        <CardSection>
-          {this.renderButton()}
-        </CardSection>
-      </Card>
+          <CardSection>
+            {this.renderButton()}
+          </CardSection>
+        </Card>
+      </View>
     );
   }
 }
