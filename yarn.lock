@@ -1046,6 +1046,12 @@ babel-plugin-jest-hoist@^23.2.0:
   version "23.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-23.2.0.tgz#e61fae05a1ca8801aadee57a6d66b8cefaf44167"
 
+babel-plugin-react-transform@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-transform/-/babel-plugin-react-transform-2.0.2.tgz#515bbfa996893981142d90b1f9b1635de2995109"
+  dependencies:
+    lodash "^4.6.1"
+
 babel-plugin-react-transform@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-react-transform/-/babel-plugin-react-transform-3.0.0.tgz#402f25137b7bb66e9b54ead75557dfbc7ecaaa74"
@@ -1299,6 +1305,10 @@ babel-plugin-transform-regenerator@^6.5.0:
   dependencies:
     regenerator-transform "^0.10.0"
 
+babel-plugin-transform-remove-console@^6.8.5:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-remove-console/-/babel-plugin-transform-remove-console-6.9.4.tgz#b980360c067384e24b357a588d807d3c83527780"
+
 babel-plugin-transform-strict-mode@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-strict-mode/-/babel-plugin-transform-strict-mode-6.24.1.tgz#d5faf7aa578a65bbe591cf5edae04a0c67020758"
@@ -1394,6 +1404,40 @@ babel-preset-react-native@4.0.0, babel-preset-react-native@^4.0.0:
     babel-plugin-transform-react-jsx-source "^6.5.0"
     babel-plugin-transform-regenerator "^6.5.0"
     babel-template "^6.24.1"
+    react-transform-hmr "^1.0.4"
+
+babel-preset-react-native@^1.9.0:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-1.9.2.tgz#b22addd2e355ff3b39671b79be807e52dfa145f2"
+  dependencies:
+    babel-plugin-check-es2015-constants "^6.5.0"
+    babel-plugin-react-transform "2.0.2"
+    babel-plugin-syntax-async-functions "^6.5.0"
+    babel-plugin-syntax-class-properties "^6.5.0"
+    babel-plugin-syntax-flow "^6.5.0"
+    babel-plugin-syntax-jsx "^6.5.0"
+    babel-plugin-syntax-trailing-function-commas "^6.5.0"
+    babel-plugin-transform-class-properties "^6.5.0"
+    babel-plugin-transform-es2015-arrow-functions "^6.5.0"
+    babel-plugin-transform-es2015-block-scoping "^6.5.0"
+    babel-plugin-transform-es2015-classes "^6.5.0"
+    babel-plugin-transform-es2015-computed-properties "^6.5.0"
+    babel-plugin-transform-es2015-destructuring "^6.5.0"
+    babel-plugin-transform-es2015-for-of "^6.5.0"
+    babel-plugin-transform-es2015-function-name "^6.5.0"
+    babel-plugin-transform-es2015-literals "^6.5.0"
+    babel-plugin-transform-es2015-modules-commonjs "^6.5.0"
+    babel-plugin-transform-es2015-parameters "^6.5.0"
+    babel-plugin-transform-es2015-shorthand-properties "^6.5.0"
+    babel-plugin-transform-es2015-spread "^6.5.0"
+    babel-plugin-transform-es2015-template-literals "^6.5.0"
+    babel-plugin-transform-flow-strip-types "^6.5.0"
+    babel-plugin-transform-object-assign "^6.5.0"
+    babel-plugin-transform-object-rest-spread "^6.5.0"
+    babel-plugin-transform-react-display-name "^6.5.0"
+    babel-plugin-transform-react-jsx "^6.5.0"
+    babel-plugin-transform-react-jsx-source "^6.5.0"
+    babel-plugin-transform-regenerator "^6.5.0"
     react-transform-hmr "^1.0.4"
 
 babel-register@^6.24.1, babel-register@^6.26.0:
@@ -1666,6 +1710,10 @@ ci-info@^1.0.0:
 circular-json@^0.3.1:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.3.tgz#815c99ea84f6809529d2f45791bdf82711352d66"
+
+clamp@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/clamp/-/clamp-1.0.1.tgz#66a0e64011816e37196828fdc8c8c147312c8634"
 
 class-utils@^0.3.5:
   version "0.3.6"
@@ -2536,7 +2584,7 @@ fbjs-scripts@^0.8.1:
     semver "^5.1.0"
     through2 "^2.0.0"
 
-fbjs@^0.8.14, fbjs@^0.8.16, fbjs@^0.8.9:
+fbjs@^0.8.1, fbjs@^0.8.14, fbjs@^0.8.16, fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   dependencies:
@@ -3920,6 +3968,10 @@ lodash.findindex@^4.3.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.findindex/-/lodash.findindex-4.6.0.tgz#a3245dee61fb9b6e0624b535125624bb69c11106"
 
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+
 lodash.pad@^4.1.0:
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/lodash.pad/-/lodash.pad-4.5.1.tgz#4330949a833a7c8da22cc20f6a26c4d59debba70"
@@ -4805,7 +4857,7 @@ prompts@^0.1.9:
     kleur "^1.0.0"
     sisteransi "^0.1.1"
 
-prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -4880,6 +4932,32 @@ react-devtools-core@3.1.0:
 react-is@^16.3.1:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.1.tgz#d624c4650d2c65dbd52c72622bbf389435d9776e"
+
+react-native-experimental-navigation@^0.29.1:
+  version "0.29.2"
+  resolved "https://registry.yarnpkg.com/react-native-experimental-navigation/-/react-native-experimental-navigation-0.29.2.tgz#14727e2df0c7fd4693ab96821b59474410968e85"
+  dependencies:
+    babel-plugin-syntax-flow "^6.8.0"
+    babel-plugin-transform-flow-strip-types "^6.8.0"
+    babel-preset-react-native "^1.9.0"
+    clamp "^1.0.1"
+    fbjs "^0.8.1"
+    prop-types "^15.5.10"
+
+react-native-router-flux@^3.35.0:
+  version "3.43.0"
+  resolved "https://registry.yarnpkg.com/react-native-router-flux/-/react-native-router-flux-3.43.0.tgz#a784f467e457fc247458081365904d01b61ae76d"
+  dependencies:
+    babel-plugin-transform-remove-console "^6.8.5"
+    lodash.isequal "^4.5.0"
+    prop-types "^15.6.0"
+    react-native-experimental-navigation "^0.29.1"
+    react-native-tabs "^1.0.9"
+    react-static-container "^1.0.2"
+
+react-native-tabs@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/react-native-tabs/-/react-native-tabs-1.0.9.tgz#75d3c35e8b5b6970869eab282372cb32e2a782cd"
 
 react-native@0.55.4:
   version "0.55.4"
@@ -4962,6 +5040,10 @@ react-redux@^5.0.7:
     lodash-es "^4.17.5"
     loose-envify "^1.1.0"
     prop-types "^15.6.0"
+
+react-static-container@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-static-container/-/react-static-container-1.0.2.tgz#30a4f7548860be1d55d5eb4c20645b835c2bdf34"
 
 react-test-renderer@16.3.1:
   version "16.3.1"
